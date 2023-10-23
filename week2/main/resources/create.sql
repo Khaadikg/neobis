@@ -1,16 +1,16 @@
-CREATE TABLE basket (
-    id BIGINT NOT NULL,
+CREATE TABLE if not exists basket (
+    id BIGSERIAL NOT NULL,
+    customer_id BIGINT,
     PRIMARY KEY (id)
 );
 CREATE TABLE basket_products (
     basket_id BIGINT NOT NULL,
-    products_id BIGINT NOT NULL UNIQUE,
+    products_id BIGINT NOT NULL,
     PRIMARY KEY (basket_id, products_id)
 );
-CREATE TABLE customer (
+CREATE TABLE if not exists customer (
+    id BIGSERIAL NOT NULL UNIQUE,
     DATE DATE DEFAULT CURRENT_TIMESTAMP,
-    basket_id BIGINT UNIQUE,
-    id BIGSERIAL NOT NULL,
     name VARCHAR(255),
     password VARCHAR(255),
     surname VARCHAR(255),
@@ -18,8 +18,8 @@ CREATE TABLE customer (
     PRIMARY KEY (id)
 );
 CREATE TABLE product (
+    id BIGSERIAL NOT NULL UNIQUE,
     barcode INTEGER,
-    id BIGSERIAL NOT NULL,
     name VARCHAR(255),
     PRIMARY KEY (id)
 );
@@ -32,6 +32,6 @@ ALTER TABLE
     ADD
         CONSTRAINT fk_product_id FOREIGN KEY (basket_id) REFERENCES basket;
 ALTER TABLE
-    if EXISTS customer
+    if EXISTS basket
     ADD
-        CONSTRAINT fk_basket_id FOREIGN KEY (basket_id) REFERENCES basket;
+        CONSTRAINT fk_customer_id FOREIGN KEY (customer_id) REFERENCES basket;

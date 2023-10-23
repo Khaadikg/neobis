@@ -1,0 +1,12 @@
+Все примерные тестовые методы для customer
+прописаны в классе -> Main
+Методы хранят куски SQL кода из create.sql
+и обратно совместимы при использовании через методы JDBC
+или запуска самого create.sql
+
+
+
+Steps:
+ 1 - Clone repo
+ 2 - connect postgres
+ 2 - run Main
