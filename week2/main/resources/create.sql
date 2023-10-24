@@ -21,6 +21,7 @@ CREATE TABLE product (
     id BIGSERIAL NOT NULL UNIQUE,
     barcode INTEGER,
     name VARCHAR(255),
+    price INTEGER,
     PRIMARY KEY (id)
 );
 ALTER TABLE
