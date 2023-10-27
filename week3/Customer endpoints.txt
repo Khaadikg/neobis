@@ -1,0 +1,58 @@
+Method: GET endpoint:/api/customers
+Description: Получает список покупателей
+Пример ответа: [
+{
+    “id”: 1,
+    “name”: “John”,
+    “surname”: “Doe”,
+    “username”: “johndoe”,
+    “password”: “123456”,
+    “createdDate”: 12.12.2012
+    {,
+    }
+    “id”: 2,
+    “name”: “Asel”,
+    “surname”: “Mamyrbek”,
+    “username”: “Aselya”,
+    “password”: “123123”,
+    “createdDate”: 22.22.2022
+    }
+]
+
+Method: GET endpoint:/api/customers/{some id}
+Description: Получает покупателя по id
+Пример ответа:
+{
+    “id”: 1,
+    “name”:
+    “John”,
+    “surname”: “Doe”,
+    “username”: “johndoe”,
+    “password”: “123456”,
+    “createdDate”: 12.12.2012
+}
+
+Method: POST endpoint:/api/customers
+Description: Создает нового покупателя по аналогичным JSON
+пример запроса:
+{
+    "name" : "haadi",
+    "surname" : "bolotbekov",
+    "username" : "admin",
+    "password" : "admin"
+}
+
+Method: PUT endpoint:/api/customers/{some id}
+Description: Обновляет информацию о покупателе по id
+пример запроса:
+{
+    "name": "John",
+    "surname": "Doe",
+    "age": 20,
+    "image": "https://example.com/image.jpg",
+    "phoneNumber": "+123456789",
+    "address": "123 Main Street"
+}
+
+Method: DELETE endpoint:/api/customers/{some id}
+Description: Удаляет покупателя по id
