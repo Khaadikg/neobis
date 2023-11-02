@@ -7,7 +7,7 @@ public class Hello{
  }
 }
 ```
-<h3>Week2 Task Description</h3>
+<h3>week-2 description</h3>
 
 ```
 1. Решены задачи на HackerRank, укреплены знания SQL
@@ -15,17 +15,10 @@ public class Hello{
 3. Созданы этого для магазина таблицы и связи между ними, ваши SQL команды протестированы и работают и у друга на компьютере
 4. Имеются твердые знания связей между сущностями, нормализации
 ```
-<h3>Link for week3 project</h3>
+<h3>Link for week-3 project</h3>
 
 ```
 https://github.com/Khaadikg/neobis-store
 ```
+<a>https://github.com/Khaadikg/neobis-store</a>
 
-${\color{green}Outlandish - Aicha}$
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=f0nFTdKlKLw
-" target="_blank"><img src="http://img.youtube.com/vi/f0nFTdKlKLw/0.jpg"
-alt="IMAGE ALT TEXT HERE" width="280" height="200" border="10" /></a>
-
-
-here was Azamat
