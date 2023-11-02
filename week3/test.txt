@@ -56,3 +56,27 @@ Description: Обновляет информацию о покупателе п�
 
 Method: DELETE endpoint:/api/customers/{some id}
 Description: Удаляет покупателя по id
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////ENDPOINTS FOR ORDERING//////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Method: POST endpoint:/api/orders?address={some_address}&type={delivery_type}
+Parameters: address: required, type: required
+Description: Создает заказ на сонове принятого Json массива
+
+пример запроса:
+[
+    {
+        "barcode": 123113,
+        "amount": 6
+    },
+    {
+        "barcode": 321321,
+        "amount": 3
+    }
+]
+
+Method: DELETE endpoint:/api/orders?reason={some_reason}
+Parameters: reason: not required
+Description: Отменяет его удалив по id
