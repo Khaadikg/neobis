@@ -7,7 +7,7 @@ public class Hello{
  }
 }
 ```
-<h3>week-3 description</h3>
+<h3>week-2 description</h3>
 
 ```
 1. Решены задачи на HackerRank, укреплены знания SQL
@@ -20,4 +20,5 @@ public class Hello{
 ```
 https://github.com/Khaadikg/neobis-store
 ```
+<a>https://github.com/Khaadikg/neobis-store</a>
 
