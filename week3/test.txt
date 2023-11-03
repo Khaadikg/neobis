@@ -1,7 +1,8 @@
 Method: GET endpoint:/api/customers
 Description: Получает список покупателей
-Пример ответа: [
-{
+Пример ответа:
+[
+    {
     “id”: 1,
     “name”: “John”,
     “surname”: “Doe”,
@@ -37,9 +38,22 @@ Description: Создает нового покупателя по аналог�
 пример запроса:
 {
     "name" : "haadi",
-    "surname" : "bolotbekov",
-    "username" : "admin",
-    "password" : "admin"
+    "surname" : "bolotbekov"
+}
+/////////- OR WITH TOTAL DATA -///////////
+{
+    "role": some_role,
+    "username": "Jack",
+    "password": "Jackson.official",
+        "info": {
+            "name": "Michael",
+            "surname": "Jackson",
+            "age": 33,
+            "image": some_image,
+            "email": Jackson@gmail.com,
+            "phoneNumber": 123123123,
+            "address": US, California
+        }
 }
 
 Method: PUT endpoint:/api/customers/{some id}
@@ -80,3 +94,49 @@ Description: Создает заказ на сонове принятого Json
 Method: DELETE endpoint:/api/orders?reason={some_reason}
 Parameters: reason: not required
 Description: Отменяет его удалив по id
+
+Method: GET endpoint:/api/orders
+Description: Получает список заказов
+Пример ответа:
+[
+    {
+        "id": 1,
+        "type": "COURIER",
+        "stage": "ASSEMBLY",
+        "address": "Moscow, Lenina 23",
+        "totalOrderPrice": 470.75,
+        "user": null,
+        "orderDetails": [
+            {
+                "id": 1,
+                "amount": 3,
+                "total": 201.75
+            },
+            {
+                "id": 2,
+                "amount": 4,
+                "total": 269.0
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "type": "COURIER",
+        "stage": "ASSEMBLY",
+        "address": "Moscow, Lenina 23",
+        "totalOrderPrice": 470.75,
+        "user": null,
+        "orderDetails": [
+            {
+                "id": 3,
+                "amount": 3,
+                "total": 201.75
+            },
+            {
+                "id": 4,
+                "amount": 4,
+                "total": 269.0
+            }
+        ]
+    }
+]
