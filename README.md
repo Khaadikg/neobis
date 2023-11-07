@@ -15,7 +15,14 @@ public class Hello{
 3. Созданы этого для магазина таблицы и связи между ними, ваши SQL команды протестированы и работают и у друга на компьютере
 4. Имеются твердые знания связей между сущностями, нормализации
 ```
-<h3>Link for week-3 project</h3>
+<h3>week-3 description</h3>
+
+```
+1. ознакомиться с фреймворком Spring
+2. создать REST endpoints (Реализовать 5 API endpoints.)
+3. научиться тестировать на Postman и записать в test.txt
+```
+<h3>Link for neobis-store project</h3>
 
 ```
 https://github.com/Khaadikg/neobis-store
