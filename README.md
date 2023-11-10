@@ -22,6 +22,17 @@ public class Hello{
 2. создать REST endpoints (Реализовать 5 API endpoints.)
 3. научиться тестировать на Postman и записать в test.txt
 ```
+<h3>week-4 description</h3>
+
+```
+- JPA Репозитории
+1. Разработаны остальные endpoints c типами GET/POST/DELETE/PUT.
+2. Иметь четкое представление JPA.
+3. База данных подключена через JPA.
+- Секюрити
+1. Повышен уровень безопасности проекта.
+2. Реализована веб страница с подключенным к Spring Security и базе данных окном регистрации и авторизации.
+```
 <h3>Link for neobis-store project</h3>
 
 ```
