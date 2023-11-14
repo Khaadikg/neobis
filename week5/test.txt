@@ -1,0 +1,3 @@
+ <-- For running integration tests clone repo "neobis-store" -->
+1) manually using Intelij IDEA point to test-controller package (control+R) 
+2) using maven lifecycle run command on terminal (mvn verify)
