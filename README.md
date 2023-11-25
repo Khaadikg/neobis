@@ -50,7 +50,7 @@ public class Hello{
 3. Для Docker-compose можно указать инструкции для Java-приложения и базы данных, с которой приложение "разговаривает”
 
 **Deployment**
-1ю Задеплойте свой сервис на выбранной вами платформе (Heroku/DigitalOcean, etc)
+1. Задеплойте свой сервис на выбранной вами платформе (Heroku/DigitalOcean, etc)
 ```
 
 <h3>Link for neobis-store project</h3>
